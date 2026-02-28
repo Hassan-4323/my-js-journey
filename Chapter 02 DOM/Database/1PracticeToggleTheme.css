@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LIGHT THEME */
+body.light {
+    background-color: #ffffff;
+    color: #222;
+}
+
+/* DARK THEME */
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button in light mode */
+body.light button {
+    background-color: #222;
+    color: white;
+}
+
+/* Button in dark mode */
+body.dark button {
+    background-color: #ffffff;
+    color: #121212;
+}

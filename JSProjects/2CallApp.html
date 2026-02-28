@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Call App</title>
+    <link rel="stylesheet" href="2CallApp.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="side-buttons">
+        <button id="addBtn">+</button>
+        <button id="upBtn">↑</button>
+        <button id="downBtn">↓</button>
+    </div>
+
+    <div class="cards-wrapper"></div>
+
+    <div class="colors">
+        <span class="black"></span>
+        <span class="purple"></span>
+        <span class="orange"></span>
+        <span class="green"></span>
+    </div>
+
+</div>
+
+<div class="form-container" id="formContainer">
+    <form class="add-form">
+
+        <h3>Generate New Member</h3>
+
+        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="Home Town" required>
+        <input type="number" placeholder="Bookings" required>
+        <input type="url" placeholder="Image URL" required>
+
+        <div class="form-buttons">
+            <button type="button" class="generate-btn">Generate</button>
+            <button type="button" class="close-btn">Close</button>
+        </div>
+
+    </form>
+</div>
+
+<script src="2CallApp.js"></script>
+</body>
+</html>
