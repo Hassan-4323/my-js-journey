@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Management</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-900 text-white flex flex-col items-center gap-6 py-8 overflow-hidden">
+
+
+<!-- FORM -->
+<form id="userForm"
+class="w-[200px] h-[280px] bg-white/10 backdrop-blur-lg border border-white/10 rounded-xl p-4 flex flex-col gap-2">
+
+<h2 class="text-sm text-center font-semibold">Add User</h2>
+
+<input id="name" type="text" placeholder="Name"
+class="text-xs p-1 rounded bg-gray-800 border border-gray-700 outline-none">
+
+<input id="role" type="text" placeholder="Role"
+class="text-xs p-1 rounded bg-gray-800 border border-gray-700 outline-none">
+
+<textarea id="bio" rows="2" placeholder="Bio"
+class="text-xs p-1 rounded bg-gray-800 border border-gray-700 outline-none"></textarea>
+
+<input id="photo" type="text" placeholder="Photo URL"
+class="text-xs p-1 rounded bg-gray-800 border border-gray-700 outline-none">
+
+<button type="submit"
+class="text-xs bg-gray-800 hover:bg-gray-700 p-1 rounded mt-auto">
+Submit
+</button>
+
+</form>
+
+
+
+<!-- USERS -->
+<div id="usersContainer"
+class="flex gap-6 flex-wrap justify-center">
+
+
+<!-- CARD -->
+<div class="w-[200px] h-[230px] bg-white/10 backdrop-blur-lg border border-white/10 rounded-xl p-4 text-center flex flex-col items-center">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg"
+class="w-14 h-14 rounded-full object-cover mb-2">
+
+<h3 class="text-sm font-semibold">John Doe</h3>
+
+<p class="text-xs text-gray-400">Frontend Developer</p>
+
+<p class="text-xs mt-2 text-gray-300">
+Loves building beautiful UIs and learning new technologies.
+</p>
+
+</div>
+
+
+<div class="w-[200px] h-[230px] bg-white/10 backdrop-blur-lg border border-white/10 rounded-xl p-4 text-center flex flex-col items-center">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg"
+class="w-14 h-14 rounded-full object-cover mb-2">
+
+<h3 class="text-sm font-semibold">Jane Smith</h3>
+
+<p class="text-xs text-gray-400">Backend Engineer</p>
+
+<p class="text-xs mt-2 text-gray-300">
+Enjoys solving complex problems and optimizing APIs.
+</p>
+
+</div>
+
+
+<div class="w-[200px] h-[230px] bg-white/10 backdrop-blur-lg border border-white/10 rounded-xl p-4 text-center flex flex-col items-center">
+
+<img src="https://randomuser.me/api/portraits/men/75.jpg"
+class="w-14 h-14 rounded-full object-cover mb-2">
+
+<h3 class="text-sm font-semibold">Alex Lee</h3>
+
+<p class="text-xs text-gray-400">UI/UX Designer</p>
+
+<p class="text-xs mt-2 text-gray-300">
+Passionate about user experience and clean design.
+</p>
+
+</div>
+
+
+</div>
+
+
+<script src="6UserManagement.js"></script>
+
+</body>
+</html>
